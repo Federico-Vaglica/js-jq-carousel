@@ -40,7 +40,7 @@ function prevImg(){
 
     if(currentImg.hasClass('first')){
         $('.images img.last').addClass('active');
-        $('.nav i.first').addClass('active');
+        $('.nav i.last').addClass('active');   /*qui*/
     } else {
         currentImg.prev().addClass('active');
         currentDot.prev().addClass('active');
