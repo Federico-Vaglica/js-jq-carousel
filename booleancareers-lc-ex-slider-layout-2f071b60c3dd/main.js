@@ -7,7 +7,16 @@ $('.prev').click(function(){
     prevImg();
 });
 
+$('.nav i').click(function(){
+    var dotInUse = $(this).index();                  
+    var activeImg = $('.images img').eq(dotInUse);
 
+
+    $('.nav i.active').removeClass('active');      
+    $(this).addClass('active');                               
+    $('.images img.active').removeClass('active');          
+    activeImg.addClass('active');                           
+});
 
 /*********************/
 
@@ -48,3 +57,4 @@ function prevImg(){
     }
 
 }
+
